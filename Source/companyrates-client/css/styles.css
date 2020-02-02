@@ -1,0 +1,130 @@
+﻿#pripombeGlyph{
+    font-size:20px;
+    top:20px;
+}
+
+body
+{
+    background-color:white;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#CB_anonymous
+{
+    height:15px;
+    width:15px;
+}
+
+.navbar-inverse{
+    background-color:#1A2930;
+    border-color:#1A2930;
+    
+}
+
+.navbar-inverse .navbar-brand{
+    color:#C5C1C0;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color:#C5C1C0;
+}
+
+.btn-primary{
+    background-color: #1A2930;
+    border-color:#1A2930;
+    color: #C5C1C0;
+}
+
+.btn-primary:hover{
+    background-color: #0A1612;
+    border-color:#1A2930;
+    color: #C5C1C0;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd):hover{
+    background-color:#1A2930;
+    border-color:#1A2930;
+    color: #C5C1C0;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus
+{
+    background-color: #1A2930;
+    border-color:#1A2930;
+    color: #C5C1C0;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd){
+    background-color: #C5C1C0;
+    border-color:#C5C1C0;
+    color: #1A2930;
+}
+
+.far{
+    font-size:30px;
+}
+.fa-comments {
+    color: #f9edbe;
+}
+
+.fa-thumbs-up{
+    color:green;
+}
+
+.fa-thumbs-down{
+    color:red;
+}
+
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-form-1{
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+.login-form-2{
+    padding: 5%;
+    background: #0062cc;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-2 h3{
+    text-align: center;
+    color: #fff;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+}
+.login-form-2 .btnSubmit{
+    font-weight: 600;
+    color: #0062cc;
+    background-color: #fff;
+}
+.login-form-2 .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.login-form-1 .ForgetPwd{
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+

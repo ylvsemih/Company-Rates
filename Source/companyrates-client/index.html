@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Index - CompanyRates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/sites/common.js"></script>
+    <script src="./js/sites/index.js"></script>
+</head>
+
+<body>
+
+    <nav class="sidenav navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">CompanyRates</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Companies <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="active"><a href="index.html">List of companies</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+                <ul id="ul_profile" class="nav navbar-nav navbar-right">
+                    <li><a href="Login.html">Loading ...</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 well">
+                <div class="col-md-4">
+                    <div class="form-group has-feedback">
+                        <input id="txt_search" placeholder="Search string" class="form-control">
+                    </div>
+                </div>
+                <button type="button" id="btn_search" class="btn btn-primary btn-md"><span class="glyphicon glyphicon-search"></span>FIND</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="alerti" role="alert"></div>
+                <table id="table_companies" class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Company name</th>
+                            <th scope="col">Verified</th>
+                            <th scope="col">Website</th>
+                            <th scope="col">Total Rating</th>
+                            <th scope="col">More...</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <!-- </div> -->
+
+            <hr />
+            <footer>
+                <p>&copy; CompanyRates</p>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>

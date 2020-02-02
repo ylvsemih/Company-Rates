@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Selected Company - CompanyRates</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/sites/common.js"></script>
+    <script src="./js/sites/selectedcompany.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">CompanyRates</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Companies<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">List of companies</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+                <ul id="ul_profile" class="nav navbar-nav navbar-right">
+                    <li><a href="Login.html">Loading ...</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <input type="hidden" id="MyID">
+        <div id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                        <h4 class="modal-title">Add review</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>Enter review:</p>
+                        <div>
+                            <textarea id="txt_review" style="width: 100%;"></textarea>
+                            <div class="form-group">
+                                <label for="example-url-input" class="col-2 col-form-label">Category</label>
+                                <div class="col-10">
+                                    <select id="DDL_category" name="DDL_category">
+                                        <option value="Mobing">Mobing</option>
+                                        <option value="Low salary">Low salary</option>
+                                        <option value="Bad employees">Bad employees</option>
+                                        <option value="Good opinion">Good opinion</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <label>
+                                <button type="button" id="btn_addReview" class="btn btn-primary btn-md"><span class="glyphicon glyphicon-plus"></span>ADD</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6 text-center well"><a href="index.html" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span>Back
+                        to Companies</a></div>
+                <div id="div_addReview" class="col-md-6 text-center well">
+                    <button type="button" id="btn_openModalAddReview" class="btn btn-primary btn-md"><span class="glyphicon glyphicon-plus"></span>ADD
+                        REVIEW</button>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 well">
+                    COMPANY NAME:
+                    <label id="lbl_name"></label>
+                    <br />
+                    COMPANY ADDRESS:
+                    <label id="lbl_address"></label>
+                    <br />
+                    COMPANY SITE:
+                    <label id="lbl_site"></label>
+                    <br />
+                    VERIFIED:
+                    <label id="lbl_verified"></label><br>
+                    TOTAL RATING:
+                    <label id="lbl_rating"></label><br>
+                    <div class="col-md-4">
+                        <button id="btn_compnay_thumbsup" class="btn"><i class="far fa-thumbs-up"></i></button>
+                        <button id="btn_company_thumbsdown" class="btn"><i class="far fa-thumbs-down"></i></button></div>
+                    <div class="col-md-4">
+                        <button type="button" id="btn_approve" class="btn btn-warning btn-lg hidden">Approve</button>
+
+
+                    </div>
+                    <div class="col-md-4">
+                        <button type="button" id="btn_removeCompany" class="btn btn-danger btn-lg hidden">Remove
+                        </button></div>
+                </div>
+                <div class="col-md-6"><img id="logo-img" width="200px" /></div>
+
+            </div>
+
+            <div class="row">
+                <h2>REVIEWS</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 well">
+
+                    <div id="alerti" role="alert"></div>
+                    <table id="table_reviews" class="table table-hover table-striped table-responsive">
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
